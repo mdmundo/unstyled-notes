@@ -21,7 +21,9 @@ const AddNoteForm = () => {
     <div>
       <p>Add note</p>
       <form onSubmit={addNote}>
+        {'Title: '}
         <input value={title} onChange={(e) => setTitle(e.target.value)} />
+        {'Body: '}
         <input value={body} onChange={(e) => setBody(e.target.value)}></input>
         <button>Add Note</button>
       </form>
