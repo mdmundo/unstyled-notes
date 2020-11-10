@@ -8,9 +8,8 @@ const Note = ({ note }) => {
     <div>
       <h3>{note.title}</h3>
       <p>{note.body}</p>
-      <button
-        onClick={() => dispatch({ type: 'REMOVE_NOTE', title: note.title })}>
-        x
+      <button onClick={() => dispatch({ type: 'REMOVE_NOTE', id: note.id })}>
+        Remove
       </button>
     </div>
   );
